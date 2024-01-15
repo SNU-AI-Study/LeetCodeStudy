@@ -13,7 +13,6 @@ class Solution:
                     if tmp[-1].isdigit():
                         c.append(int(tmp.pop()))
                     else: break
-                test = sum([x*(10**i) for i,x in enumerate(c)])
                 tmp.extend(list(ans[::-1]) * sum([x*(10**i) for i,x in enumerate(c)]))
             else:
                 tmp.append(string)
